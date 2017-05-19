@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Filmo
 //
-//  Created by Jorge Moñiz on 19/5/17.
+//  Created by jorgemoniz on 19/5/17.
 //  Copyright © 2017 Jorge Moñiz. All rights reserved.
 //
 

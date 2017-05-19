@@ -12,6 +12,15 @@
 		176632371ECF81C8008C0E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176632351ECF81C8008C0E0D /* Main.storyboard */; };
 		176632391ECF81C8008C0E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176632381ECF81C8008C0E0D /* Assets.xcassets */; };
 		1766323C1ECF81C8008C0E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1766323A1ECF81C8008C0E0D /* LaunchScreen.storyboard */; };
+		176632441ECF8280008C0E0D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176632431ECF8280008C0E0D /* CoreDataStack.swift */; };
+		176632471ECF8328008C0E0D /* Filmo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 176632451ECF8328008C0E0D /* Filmo.xcdatamodeld */; };
+		1766324A1ECF85A1008C0E0D /* RemoteMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176632491ECF85A1008C0E0D /* RemoteMovieService.swift */; };
+		1766324C1ECF8611008C0E0D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1766324B1ECF8611008C0E0D /* Podfile */; };
+		1766324E1ECF897A008C0E0D /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766324D1ECF897A008C0E0D /* API_UTILS.swift */; };
+		17E063C51ECF8DBA0092DC83 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E063C21ECF8DBA0092DC83 /* Alamofire.framework */; };
+		17E063C61ECF8DBA0092DC83 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E063C31ECF8DBA0092DC83 /* Kingfisher.framework */; };
+		17E063C71ECF8DBA0092DC83 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E063C41ECF8DBA0092DC83 /* SwiftyJSON.framework */; };
+		B1A68AF5AE09B80564804F86 /* Pods_Filmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A476A7C7CA2137BDE066D8D /* Pods_Filmo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,17 @@
 		176632381ECF81C8008C0E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1766323B1ECF81C8008C0E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1766323D1ECF81C8008C0E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176632431ECF8280008C0E0D /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		176632461ECF8328008C0E0D /* Filmo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Filmo.xcdatamodel; sourceTree = "<group>"; };
+		176632491ECF85A1008C0E0D /* RemoteMovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteMovieService.swift; sourceTree = "<group>"; };
+		1766324B1ECF8611008C0E0D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		1766324D1ECF897A008C0E0D /* API_UTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
+		17E063C21ECF8DBA0092DC83 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../../Users/jorgemoniz/Library/Developer/Xcode/DerivedData/Filmo-diluufemqhuvwtefajzldmuygqei/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		17E063C31ECF8DBA0092DC83 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../../../../../Users/jorgemoniz/Library/Developer/Xcode/DerivedData/Filmo-diluufemqhuvwtefajzldmuygqei/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		17E063C41ECF8DBA0092DC83 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../../Users/jorgemoniz/Library/Developer/Xcode/DerivedData/Filmo-diluufemqhuvwtefajzldmuygqei/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		598880F93A8ABF01CE86C75A /* Pods-Filmo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filmo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Filmo/Pods-Filmo.debug.xcconfig"; sourceTree = "<group>"; };
+		97F0702B700D388C407C9D9C /* Pods-Filmo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filmo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Filmo/Pods-Filmo.release.xcconfig"; sourceTree = "<group>"; };
+		9A476A7C7CA2137BDE066D8D /* Pods_Filmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Filmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E063C51ECF8DBA0092DC83 /* Alamofire.framework in Frameworks */,
+				17E063C61ECF8DBA0092DC83 /* Kingfisher.framework in Frameworks */,
+				17E063C71ECF8DBA0092DC83 /* SwiftyJSON.framework in Frameworks */,
+				B1A68AF5AE09B80564804F86 /* Pods_Filmo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +62,11 @@
 		176632251ECF81C8008C0E0D = {
 			isa = PBXGroup;
 			children = (
+				1766324B1ECF8611008C0E0D /* Podfile */,
 				176632301ECF81C8008C0E0D /* Filmo */,
 				1766322F1ECF81C8008C0E0D /* Products */,
+				98611D2051355852B413BA76 /* Pods */,
+				1CA9D4FF6C8AD2E620EA8DE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +82,45 @@
 			isa = PBXGroup;
 			children = (
 				176632311ECF81C8008C0E0D /* AppDelegate.swift */,
+				1766324D1ECF897A008C0E0D /* API_UTILS.swift */,
 				176632331ECF81C8008C0E0D /* ViewController.swift */,
+				176632481ECF8359008C0E0D /* SERVICE_MODEL */,
 				176632351ECF81C8008C0E0D /* Main.storyboard */,
 				176632381ECF81C8008C0E0D /* Assets.xcassets */,
 				1766323A1ECF81C8008C0E0D /* LaunchScreen.storyboard */,
 				1766323D1ECF81C8008C0E0D /* Info.plist */,
 			);
 			path = Filmo;
+			sourceTree = "<group>";
+		};
+		176632481ECF8359008C0E0D /* SERVICE_MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				176632431ECF8280008C0E0D /* CoreDataStack.swift */,
+				176632491ECF85A1008C0E0D /* RemoteMovieService.swift */,
+				176632451ECF8328008C0E0D /* Filmo.xcdatamodeld */,
+			);
+			name = SERVICE_MODEL;
+			sourceTree = "<group>";
+		};
+		1CA9D4FF6C8AD2E620EA8DE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17E063C21ECF8DBA0092DC83 /* Alamofire.framework */,
+				17E063C31ECF8DBA0092DC83 /* Kingfisher.framework */,
+				17E063C41ECF8DBA0092DC83 /* SwiftyJSON.framework */,
+				9A476A7C7CA2137BDE066D8D /* Pods_Filmo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98611D2051355852B413BA76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				598880F93A8ABF01CE86C75A /* Pods-Filmo.debug.xcconfig */,
+				97F0702B700D388C407C9D9C /* Pods-Filmo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 176632401ECF81C8008C0E0D /* Build configuration list for PBXNativeTarget "Filmo" */;
 			buildPhases = (
+				3D5A7F1B787258F55DEEF1CC /* [CP] Check Pods Manifest.lock */,
 				1766322A1ECF81C8008C0E0D /* Sources */,
 				1766322B1ECF81C8008C0E0D /* Frameworks */,
 				1766322C1ECF81C8008C0E0D /* Resources */,
+				E56B9AF0825409D74BDA888B /* [CP] Embed Pods Frameworks */,
+				0A06C3AC2837469C9BDF3D93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +187,71 @@
 			files = (
 				1766323C1ECF81C8008C0E0D /* LaunchScreen.storyboard in Resources */,
 				176632391ECF81C8008C0E0D /* Assets.xcassets in Resources */,
+				1766324C1ECF8611008C0E0D /* Podfile in Resources */,
 				176632371ECF81C8008C0E0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A06C3AC2837469C9BDF3D93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Filmo/Pods-Filmo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D5A7F1B787258F55DEEF1CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E56B9AF0825409D74BDA888B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Filmo/Pods-Filmo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1766322A1ECF81C8008C0E0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176632441ECF8280008C0E0D /* CoreDataStack.swift in Sources */,
+				176632471ECF8328008C0E0D /* Filmo.xcdatamodeld in Sources */,
+				1766324E1ECF897A008C0E0D /* API_UTILS.swift in Sources */,
 				176632341ECF81C8008C0E0D /* ViewController.swift in Sources */,
+				1766324A1ECF85A1008C0E0D /* RemoteMovieService.swift in Sources */,
 				176632321ECF81C8008C0E0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +373,7 @@
 		};
 		176632411ECF81C8008C0E0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598880F93A8ABF01CE86C75A /* Pods-Filmo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Filmo/Info.plist;
@@ -270,6 +386,7 @@
 		};
 		176632421ECF81C8008C0E0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F0702B700D388C407C9D9C /* Pods-Filmo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Filmo/Info.plist;
@@ -299,8 +416,22 @@
 				176632421ECF81C8008C0E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		176632451ECF8328008C0E0D /* Filmo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				176632461ECF8328008C0E0D /* Filmo.xcdatamodel */,
+			);
+			currentVersion = 176632461ECF8328008C0E0D /* Filmo.xcdatamodel */;
+			path = Filmo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 176632261ECF81C8008C0E0D /* Project object */;
 }
