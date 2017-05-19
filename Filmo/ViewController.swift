@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* Prueba de traza de JSON
+        let remote = RemoteMovieService()
+        remote.getTopMovies { (result) in
+            print(result!.count)
+        }*/
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +26,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

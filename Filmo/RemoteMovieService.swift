@@ -43,4 +43,40 @@ class RemoteMovieService {
             }
         }
     }
+    
+    // Búsqueda de datos pasando un parámetro ( término de búsqueda )
+    func searchMovie(_ byTerm : String, completionHandler : @escaping (_ arrayDiccionario : [[String : String]]?) -> ()) {
+        let urlData = URL(string: "https://itunes.apple.com/search")!
+        
+        Alamofire.request(urlData,
+                          method: .get,
+                          parameters: ["media" : "movie", "attributes" : "movieTerm", "term" : byTerm],
+                          encoding: URLEncoding.default,
+                          headers: nil).validate().responseJSON { (resultData) in
+                            switch resultData.result {
+                            case .success:
+                                if let valorData = resultData.result.value {
+                                    let json = JSON(valorData)
+                                    var resultMovie = [[String : String]]()
+                                    
+                                    let entries = json["results"].arrayValue
+                                    for c_entry in entries {
+                                        var movieDiccionario = [String : String]()
+                                        movieDiccionario["id"] = c_entry["trackId"].stringValue
+                                        movieDiccionario["title"] = c_entry["trackName"].stringValue
+                                        movieDiccionario["summary"] = c_entry["longDescription"].stringValue
+                                        movieDiccionario["image"] = c_entry["artworkUrl100"].stringValue.replacingOccurrences(of: "100x100", with: "500x500")
+                                        movieDiccionario["category"] = c_entry["primaryGenreName"].stringValue
+                                        movieDiccionario["director"] = c_entry["artistName"].stringValue
+                                        
+                                        resultMovie.append(movieDiccionario)
+                                    }
+                                    completionHandler(resultMovie)
+                                }
+                            case .failure(let error):
+                                print("Error: \(error.localizedDescription)")
+                                completionHandler(nil)
+                            }
+        }
+    }
 }
