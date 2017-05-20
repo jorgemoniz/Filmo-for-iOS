@@ -76,7 +76,17 @@ class FilmListViewController: UIViewController {
         mySearchBar.resignFirstResponder()
         self.view.removeGestureRecognizer(tapGR)
     }
-} //TODO: - FIN DE LA CLASE
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            if let indexPathSelected = myCollectionView.indexPathsForSelectedItems?.last {
+                let selectedMovie = movies[indexPathSelected.row]
+                let detailVC = segue.destination as! FilmDetailViewController
+                detailVC.movie = selectedMovie
+            }
+        }
+    }
+}
 
 extension FilmListViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
@@ -116,6 +126,10 @@ extension FilmListViewController : UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 113, height: 170)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: self)
     }
     
     /***** SEARCHBAR *****/

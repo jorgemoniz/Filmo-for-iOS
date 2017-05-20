@@ -9,10 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Films-->
+        <!--Films-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FilmListViewController" id="BYZ-38-t0r" customClass="FilmListViewController" customModule="Filmo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -73,20 +72,20 @@
                             <constraint firstItem="yaJ-4v-qoE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zKD-sV-sZM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Top Films" id="Pw5-Hr-acv"/>
+                    <navigationItem key="navigationItem" title="Films" id="Pw5-Hr-acv"/>
                     <connections>
                         <outlet property="myCollectionView" destination="yaJ-4v-qoE" id="Q5X-eo-KO8"/>
                         <outlet property="mySearchBar" destination="o2U-0t-lb5" id="W52-g9-SDl"/>
-                        <segue destination="ilx-eg-AOM" kind="push" id="UeZ-mj-DbQ"/>
+                        <segue destination="ilx-eg-AOM" kind="push" identifier="detailSegue" id="UeZ-mj-DbQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="122.78860569715144"/>
         </scene>
         <!--Favorite List View Controller-->
         <scene sceneID="y7j-c2-N1e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JYN-YZ-H6g" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FavoriteListViewController" id="zeE-fv-HVh" customClass="FavoriteListViewController" customModule="Filmo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nw8-Rn-bW8"/>
@@ -99,7 +98,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="57f-9e-ajn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dms-1N-aCS">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dms-1N-aCS">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -140,17 +139,18 @@
                     <navigationItem key="navigationItem" id="sRu-cA-gxe"/>
                     <connections>
                         <outlet property="myCollectionView" destination="57f-9e-ajn" id="rPk-3k-txo"/>
-                        <segue destination="ilx-eg-AOM" kind="push" id="5x0-hW-xpF"/>
+                        <segue destination="ilx-eg-AOM" kind="push" identifier="detailSegue" id="5x0-hW-xpF"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYN-YZ-H6g" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="868.51574212893559"/>
         </scene>
-        <!--Top Films-->
+        <!--Hunting-->
         <scene sceneID="CQ1-Ee-AOS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="10G-Ya-ZT1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Top Films" image="top-icon" id="h3l-GK-KOc"/>
+                    <tabBarItem key="tabBarItem" title="Hunting" image="top-icon" id="h3l-GK-KOc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qO7-ux-6wZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -190,6 +190,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cC4-Gl-eb7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="45G-vq-tJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -205,7 +206,6 @@
         <!--Film Detail View Controller-->
         <scene sceneID="seW-hh-oby">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0YV-fz-2jU" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FilmDetailViewController" id="ilx-eg-AOM" customClass="FilmDetailViewController" customModule="Filmo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Fh-82-uqr"/>
@@ -272,6 +272,9 @@
                                             <constraint firstAttribute="height" constant="37" id="d9V-Eh-im9"/>
                                         </constraints>
                                         <state key="normal" title="Boring!" backgroundImage="btn-off"/>
+                                        <connections>
+                                            <action selector="favoriteFilmACTION:" destination="ilx-eg-AOM" eventType="touchUpInside" id="hiB-eB-OyN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22437597598390721" green="0.22659752030057956" blue="0.22659752030057956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -319,7 +322,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d3Y-YY-mIR"/>
+                    <connections>
+                        <outlet property="myFilmCategory" destination="LQ9-Pj-7We" id="clE-zj-8uD"/>
+                        <outlet property="myFilmDescription" destination="Jup-FL-zMx" id="14L-ER-4EA"/>
+                        <outlet property="myFilmDirector" destination="HaK-Ij-ze4" id="Wm1-US-cvr"/>
+                        <outlet property="myFilmImage" destination="fpJ-2E-ppz" id="w9q-Qk-lR9"/>
+                        <outlet property="myFilmTitle" destination="Aml-u4-mqH" id="lf7-JB-onH"/>
+                        <outlet property="myInterestedBTN" destination="ype-eY-Q4L" id="Mvl-Sn-K58"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0YV-fz-2jU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2749.5999999999999" y="494.30284857571218"/>
         </scene>

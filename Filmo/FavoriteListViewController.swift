@@ -44,16 +44,15 @@ class FavoriteListViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "detailSegue" {
+            if let indexPathSelected = myCollectionView.indexPathsForSelectedItems?.last {
+                let selectedMovie = movies[indexPathSelected.row]
+                let detailVC = segue.destination as! FilmDetailViewController
+                detailVC.movie = selectedMovie
+            }
+        }
     }
-    */
-
 }
 
 extension FavoriteListViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -104,15 +103,18 @@ extension FavoriteListViewController : UICollectionViewDelegate, UICollectionVie
         return CGSize(width: 113, height: 170)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: self)
+    }
+    
     //MARK: - UTILS - DELEGATE
     func configuredCell(_ cell : FilmCustomCell, withMovie movie: MovieModel) {
         if let imageData = movie.image {
-            cell.myImageMovie.kf.setImage(with: ImageResource(downloadURL: URL(string : imageData)!),
+            cell.myImageMovie?.kf.setImage(with: ImageResource(downloadURL: URL(string : imageData)!),
                                           placeholder: #imageLiteral(resourceName: "img-loading"),
                                           options: nil,
                                           progressBlock: nil,
                                           completionHandler: nil)
         }
     }
-    
 }

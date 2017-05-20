@@ -208,4 +208,38 @@ class LocalCoreDataService {
             return false
         }
     }
+    
+    func markUnMarkFavorite (_ movie : MovieModel) {
+        // Si existe con es id, se borra
+        let context = stack.persistentContainer.viewContext
+        if let existe = getMovieById(movie.id!, favorite: true) {
+            context.delete(existe)
+        } else {
+            let favorite = MovieManager(context: context)
+            favorite.id = movie.id!
+            favorite.title = movie.title!
+            favorite.summary = movie.summary!
+            favorite.category = movie.category!
+            favorite.director = movie.director!
+            favorite.image = movie.image!
+            favorite.favorite = true
+            
+            do {
+                try context.save()
+            } catch {
+                print("Error mientras se marca como favorito")
+            }
+        }
+        // Actualizamos el Badge
+        updateFavoriteBadge()
+    }
+    
+    func updateFavoriteBadge() {
+        if let totalFavorites = getFavoriteMovie()?.count {
+            let customNotification = Notification.init(name: Notification.Name("updateFavoriteBadgeNotification"),
+                                                       object: totalFavorites,
+                                                       userInfo: nil)
+            NotificationCenter.default.post(customNotification)
+        }
+    }
 }
