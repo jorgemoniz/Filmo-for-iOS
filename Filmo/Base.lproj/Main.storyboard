@@ -124,6 +124,9 @@
                                             <constraint firstItem="QOx-Me-wuE" firstAttribute="leading" secondItem="gLS-P7-VBG" secondAttribute="leading" id="oAw-Yi-d9c"/>
                                         </constraints>
                                         <size key="customSize" width="113" height="170"/>
+                                        <connections>
+                                            <outlet property="myImageMovie" destination="QOx-Me-wuE" id="4cj-5a-al5"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -165,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="840.79999999999995" y="122.78860569715144"/>
         </scene>
-        <!--To see-->
+        <!--Watchlist-->
         <scene sceneID="YpM-GB-2UQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S4h-0A-ymQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="To see" image="ver-icon" id="lKT-qb-EPB"/>
+                    <tabBarItem key="tabBarItem" title="Watchlist" image="ver-icon" id="lKT-qb-EPB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lnd-Ud-SIj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

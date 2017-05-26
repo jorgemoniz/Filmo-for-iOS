@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174A64841ED8645C00A677DC /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A64831ED8645C00A677DC /* RateApp.swift */; };
+		174A648F1ED8654C00A677DC /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A64881ED8654C00A677DC /* CarbonSwipeRefresh.m */; };
+		174A64901ED8654C00A677DC /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A648A1ED8654C00A677DC /* CarbonTabSwipeNavigation.m */; };
+		174A64911ED8654C00A677DC /* CarbonTabSwipeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A648C1ED8654C00A677DC /* CarbonTabSwipeScrollView.m */; };
+		174A64921ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A648E1ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m */; };
+		174A64951ED8656000A677DC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A64941ED8656000A677DC /* SWRevealViewController.m */; };
 		176632321ECF81C8008C0E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176632311ECF81C8008C0E0D /* AppDelegate.swift */; };
 		176632371ECF81C8008C0E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176632351ECF81C8008C0E0D /* Main.storyboard */; };
 		176632391ECF81C8008C0E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176632381ECF81C8008C0E0D /* Assets.xcassets */; };
@@ -30,6 +36,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174A64831ED8645C00A677DC /* RateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
+		174A64851ED8654B00A677DC /* Filmo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filmo-Bridging-Header.h"; sourceTree = "<group>"; };
+		174A64861ED8654C00A677DC /* CarbonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonKit.h; sourceTree = "<group>"; };
+		174A64871ED8654C00A677DC /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonSwipeRefresh.h; sourceTree = "<group>"; };
+		174A64881ED8654C00A677DC /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonSwipeRefresh.m; sourceTree = "<group>"; };
+		174A64891ED8654C00A677DC /* CarbonTabSwipeNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeNavigation.h; sourceTree = "<group>"; };
+		174A648A1ED8654C00A677DC /* CarbonTabSwipeNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeNavigation.m; sourceTree = "<group>"; };
+		174A648B1ED8654C00A677DC /* CarbonTabSwipeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeScrollView.h; sourceTree = "<group>"; };
+		174A648C1ED8654C00A677DC /* CarbonTabSwipeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeScrollView.m; sourceTree = "<group>"; };
+		174A648D1ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeSegmentedControl.h; sourceTree = "<group>"; };
+		174A648E1ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
+		174A64931ED8656000A677DC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		174A64941ED8656000A677DC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1766322E1ECF81C8008C0E0D /* Filmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176632311ECF81C8008C0E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176632361ECF81C8008C0E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +90,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174A64821ED863EA00A677DC /* OBJ-C */ = {
+			isa = PBXGroup;
+			children = (
+				174A64851ED8654B00A677DC /* Filmo-Bridging-Header.h */,
+				174A64971ED8656F00A677DC /* CarbonKit */,
+				174A64961ED8656400A677DC /* SWRevealViewController */,
+			);
+			name = "OBJ-C";
+			sourceTree = "<group>";
+		};
+		174A64961ED8656400A677DC /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				174A64931ED8656000A677DC /* SWRevealViewController.h */,
+				174A64941ED8656000A677DC /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		174A64971ED8656F00A677DC /* CarbonKit */ = {
+			isa = PBXGroup;
+			children = (
+				174A64861ED8654C00A677DC /* CarbonKit.h */,
+				174A64871ED8654C00A677DC /* CarbonSwipeRefresh.h */,
+				174A64881ED8654C00A677DC /* CarbonSwipeRefresh.m */,
+				174A64891ED8654C00A677DC /* CarbonTabSwipeNavigation.h */,
+				174A648A1ED8654C00A677DC /* CarbonTabSwipeNavigation.m */,
+				174A648B1ED8654C00A677DC /* CarbonTabSwipeScrollView.h */,
+				174A648C1ED8654C00A677DC /* CarbonTabSwipeScrollView.m */,
+				174A648D1ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.h */,
+				174A648E1ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m */,
+			);
+			name = CarbonKit;
+			sourceTree = "<group>";
+		};
 		176632251ECF81C8008C0E0D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +147,7 @@
 		176632301ECF81C8008C0E0D /* Filmo */ = {
 			isa = PBXGroup;
 			children = (
+				174A64821ED863EA00A677DC /* OBJ-C */,
 				17E063CC1ECFB3720092DC83 /* SERVICE */,
 				176632311ECF81C8008C0E0D /* AppDelegate.swift */,
 				17E063D71ECFC47E0092DC83 /* VIEW_CONTROLLERS */,
@@ -140,6 +195,7 @@
 		17E063D81ECFC4890092DC83 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				174A64831ED8645C00A677DC /* RateApp.swift */,
 				1766324D1ECF897A008C0E0D /* API_UTILS.swift */,
 			);
 			name = API;
@@ -200,6 +256,7 @@
 				TargetAttributes = {
 					1766322D1ECF81C8008C0E0D = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -292,13 +349,19 @@
 				17E063C91ECFB10D0092DC83 /* MovieModel.swift in Sources */,
 				176632441ECF8280008C0E0D /* CoreDataStack.swift in Sources */,
 				17E063D61ECFC46F0092DC83 /* FilmCustomCell.swift in Sources */,
+				174A64911ED8654C00A677DC /* CarbonTabSwipeScrollView.m in Sources */,
 				176632471ECF8328008C0E0D /* Filmo.xcdatamodeld in Sources */,
+				174A64951ED8656000A677DC /* SWRevealViewController.m in Sources */,
 				1766324E1ECF897A008C0E0D /* API_UTILS.swift in Sources */,
+				174A64901ED8654C00A677DC /* CarbonTabSwipeNavigation.m in Sources */,
+				174A64921ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				17E063CB1ECFB2320092DC83 /* MovieManage+Mapping.swift in Sources */,
 				17E063D01ECFC43E0092DC83 /* FilmListViewController.swift in Sources */,
 				17E063CE1ECFB3EA0092DC83 /* LocalCoreDataService.swift in Sources */,
 				17E063D41ECFC4590092DC83 /* FilmDetailViewController.swift in Sources */,
 				1766324A1ECF85A1008C0E0D /* RemoteMovieService.swift in Sources */,
+				174A64841ED8645C00A677DC /* RateApp.swift in Sources */,
+				174A648F1ED8654C00A677DC /* CarbonSwipeRefresh.m in Sources */,
 				17E063D21ECFC4460092DC83 /* FavoriteListViewController.swift in Sources */,
 				176632321ECF81C8008C0E0D /* AppDelegate.swift in Sources */,
 			);
@@ -424,10 +487,13 @@
 			baseConfigurationReference = 598880F93A8ABF01CE86C75A /* Pods-Filmo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Filmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jorgemoniz.Filmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filmo/Filmo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -437,10 +503,12 @@
 			baseConfigurationReference = 97F0702B700D388C407C9D9C /* Pods-Filmo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Filmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jorgemoniz.Filmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filmo/Filmo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

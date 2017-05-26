@@ -25,6 +25,9 @@ class FavoriteListViewController: UIViewController {
         
         setupPadding()
         
+        // Ajuste altura celdas
+        automaticallyAdjustsScrollViewInsets = false
+        
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
 
