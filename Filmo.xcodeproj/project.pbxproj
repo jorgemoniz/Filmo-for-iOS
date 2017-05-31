@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170315601EDF7D0500997C83 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170315591EDF7D0500997C83 /* Bolts.framework */; };
+		170315611EDF7D0500997C83 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155A1EDF7D0500997C83 /* CryptoSwift.framework */; };
+		170315621EDF7D0500997C83 /* ExpandingMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155B1EDF7D0500997C83 /* ExpandingMenu.framework */; };
+		170315631EDF7D0500997C83 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155C1EDF7D0500997C83 /* Parse.framework */; };
+		170315641EDF7D0500997C83 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155D1EDF7D0500997C83 /* PKHUD.framework */; };
+		170315651EDF7D0500997C83 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155E1EDF7D0500997C83 /* PromiseKit.framework */; };
+		170315661EDF7D0500997C83 /* ReachabilitySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155F1EDF7D0500997C83 /* ReachabilitySwift.framework */; };
+		1703156D1EDF850400997C83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703156C1EDF850400997C83 /* HomeViewController.swift */; };
+		1703156F1EDF8A9600997C83 /* API_HELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703156E1EDF8A9600997C83 /* API_HELPERS.swift */; };
 		174A64841ED8645C00A677DC /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A64831ED8645C00A677DC /* RateApp.swift */; };
 		174A648F1ED8654C00A677DC /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A64881ED8654C00A677DC /* CarbonSwipeRefresh.m */; };
 		174A64901ED8654C00A677DC /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A648A1ED8654C00A677DC /* CarbonTabSwipeNavigation.m */; };
@@ -36,6 +45,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170315591EDF7D0500997C83 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts/Bolts.framework"; sourceTree = "<group>"; };
+		1703155A1EDF7D0500997C83 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework"; sourceTree = "<group>"; };
+		1703155B1EDF7D0500997C83 /* ExpandingMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExpandingMenu.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/ExpandingMenu/ExpandingMenu.framework"; sourceTree = "<group>"; };
+		1703155C1EDF7D0500997C83 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Pods/../build/Debug-iphoneos/Parse/Parse.framework"; sourceTree = "<group>"; };
+		1703155D1EDF7D0500997C83 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/PKHUD/PKHUD.framework"; sourceTree = "<group>"; };
+		1703155E1EDF7D0500997C83 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
+		1703155F1EDF7D0500997C83 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReachabilitySwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework"; sourceTree = "<group>"; };
+		1703156C1EDF850400997C83 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1703156E1EDF8A9600997C83 /* API_HELPERS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_HELPERS.swift; sourceTree = "<group>"; };
 		174A64831ED8645C00A677DC /* RateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		174A64851ED8654B00A677DC /* Filmo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filmo-Bridging-Header.h"; sourceTree = "<group>"; };
 		174A64861ED8654C00A677DC /* CarbonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonKit.h; sourceTree = "<group>"; };
@@ -80,6 +98,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170315601EDF7D0500997C83 /* Bolts.framework in Frameworks */,
+				170315611EDF7D0500997C83 /* CryptoSwift.framework in Frameworks */,
+				170315621EDF7D0500997C83 /* ExpandingMenu.framework in Frameworks */,
+				170315631EDF7D0500997C83 /* Parse.framework in Frameworks */,
+				170315641EDF7D0500997C83 /* PKHUD.framework in Frameworks */,
+				170315651EDF7D0500997C83 /* PromiseKit.framework in Frameworks */,
+				170315661EDF7D0500997C83 /* ReachabilitySwift.framework in Frameworks */,
 				17E063C51ECF8DBA0092DC83 /* Alamofire.framework in Frameworks */,
 				17E063C61ECF8DBA0092DC83 /* Kingfisher.framework in Frameworks */,
 				17E063C71ECF8DBA0092DC83 /* SwiftyJSON.framework in Frameworks */,
@@ -90,6 +115,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170315671EDF83D100997C83 /* VIEW_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				170315691EDF847500997C83 /* LOGIN/REGISTER/GALLERY */,
+				170315681EDF83EB00997C83 /* SOCIAL */,
+			);
+			name = VIEW_CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		170315681EDF83EB00997C83 /* SOCIAL */ = {
+			isa = PBXGroup;
+			children = (
+				1703156C1EDF850400997C83 /* HomeViewController.swift */,
+			);
+			name = SOCIAL;
+			sourceTree = "<group>";
+		};
+		170315691EDF847500997C83 /* LOGIN/REGISTER/GALLERY */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LOGIN/REGISTER/GALLERY;
+			sourceTree = "<group>";
+		};
 		174A64821ED863EA00A677DC /* OBJ-C */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +201,7 @@
 				176632311ECF81C8008C0E0D /* AppDelegate.swift */,
 				17E063D71ECFC47E0092DC83 /* VIEW_CONTROLLERS */,
 				17E063D81ECFC4890092DC83 /* API */,
+				170315671EDF83D100997C83 /* VIEW_CONTROLLERS */,
 				176632481ECF8359008C0E0D /* MODEL */,
 				176632351ECF81C8008C0E0D /* Main.storyboard */,
 				176632381ECF81C8008C0E0D /* Assets.xcassets */,
@@ -197,6 +247,7 @@
 			children = (
 				174A64831ED8645C00A677DC /* RateApp.swift */,
 				1766324D1ECF897A008C0E0D /* API_UTILS.swift */,
+				1703156E1EDF8A9600997C83 /* API_HELPERS.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -204,6 +255,13 @@
 		1CA9D4FF6C8AD2E620EA8DE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				170315591EDF7D0500997C83 /* Bolts.framework */,
+				1703155A1EDF7D0500997C83 /* CryptoSwift.framework */,
+				1703155B1EDF7D0500997C83 /* ExpandingMenu.framework */,
+				1703155C1EDF7D0500997C83 /* Parse.framework */,
+				1703155D1EDF7D0500997C83 /* PKHUD.framework */,
+				1703155E1EDF7D0500997C83 /* PromiseKit.framework */,
+				1703155F1EDF7D0500997C83 /* ReachabilitySwift.framework */,
 				17E063C21ECF8DBA0092DC83 /* Alamofire.framework */,
 				17E063C31ECF8DBA0092DC83 /* Kingfisher.framework */,
 				17E063C41ECF8DBA0092DC83 /* SwiftyJSON.framework */,
@@ -348,6 +406,7 @@
 			files = (
 				17E063C91ECFB10D0092DC83 /* MovieModel.swift in Sources */,
 				176632441ECF8280008C0E0D /* CoreDataStack.swift in Sources */,
+				1703156D1EDF850400997C83 /* HomeViewController.swift in Sources */,
 				17E063D61ECFC46F0092DC83 /* FilmCustomCell.swift in Sources */,
 				174A64911ED8654C00A677DC /* CarbonTabSwipeScrollView.m in Sources */,
 				176632471ECF8328008C0E0D /* Filmo.xcdatamodeld in Sources */,
@@ -357,6 +416,7 @@
 				174A64921ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				17E063CB1ECFB2320092DC83 /* MovieManage+Mapping.swift in Sources */,
 				17E063D01ECFC43E0092DC83 /* FilmListViewController.swift in Sources */,
+				1703156F1EDF8A9600997C83 /* API_HELPERS.swift in Sources */,
 				17E063CE1ECFB3EA0092DC83 /* LocalCoreDataService.swift in Sources */,
 				17E063D41ECFC4590092DC83 /* FilmDetailViewController.swift in Sources */,
 				1766324A1ECF85A1008C0E0D /* RemoteMovieService.swift in Sources */,
@@ -488,6 +548,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Parse",
+				);
 				INFOPLIST_FILE = Filmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jorgemoniz.Filmo;
@@ -504,6 +569,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Parse",
+				);
 				INFOPLIST_FILE = Filmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jorgemoniz.Filmo;

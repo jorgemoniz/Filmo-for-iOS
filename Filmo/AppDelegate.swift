@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialize Parse.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "g5DqpBPGWw4V415KHdEwkOGKlm2xZg3ybuq915jy"
+            $0.clientKey = "VTyaE3uUnFRHLYfPw6tU5KEhjEFJJg7sZFLQuW5p"
+            $0.server = "https://parseapi.back4app.com/"
+        }
+        Parse.initialize(with: configuration)
         
         customUI()
         
@@ -55,6 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func customUI() {
         let navBar = UINavigationBar.appearance()
         let tabBar = UITabBar.appearance()
+        let toolBar = UIToolbar.appearance()
         
         navBar.barTintColor = CONSTANTES.COLORES_BASE.COLOR_GRIS_TAB_NAV_BAR
         navBar.tintColor = CONSTANTES.COLORES_BASE.COLOR_ROJO_GENERAL
@@ -62,6 +72,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabBar.barTintColor = CONSTANTES.COLORES_BASE.COLOR_GRIS_TAB_NAV_BAR
         tabBar.tintColor = CONSTANTES.COLORES_BASE.COLOR_ROJO_GENERAL
+        
+        toolBar.barTintColor = CONSTANTES.COLORES_BASE.COLOR_GRIS_TAB_NAV_BAR
+        toolBar.tintColor = CONSTANTES.COLORES_BASE.BLANCO_TEXTO_NAV
     }
     
     func updateFavoriteBadgeNotification(_ notification : Notification) {

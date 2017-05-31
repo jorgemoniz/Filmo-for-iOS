@@ -99,8 +99,7 @@ func getRateAlertCountdown() -> Int {
     defaults = UserDefaults()
     if defaults.object(forKey: RATED_DEFAULT_KEY) == nil {
         return showRateTimes - viewLoaded
-    }
-    else {
+    } else {
         return 0
     }
 }

@@ -1,18 +1,68 @@
 PODS:
   - Alamofire (4.4.0)
+  - Bolts/Tasks (1.8.4)
+  - CryptoSwift (0.6.9)
+  - ExpandingMenu (0.3.1)
   - Kingfisher (3.9.1)
+  - Parse (1.14.4):
+    - Bolts/Tasks (~> 1.8)
+  - PKHUD (3.2.1)
+  - PromiseKit (4.2.0):
+    - PromiseKit/Foundation (= 4.2.0)
+    - PromiseKit/QuartzCore (= 4.2.0)
+    - PromiseKit/UIKit (= 4.2.0)
+  - PromiseKit/Alamofire (4.2.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (4.2.0)
+  - PromiseKit/Foundation (4.2.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.2.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.2.0):
+    - PromiseKit/CorePromise
+  - ReachabilitySwift (3)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
+  - ExpandingMenu
   - Kingfisher
+  - Parse
+  - PKHUD (from `https://github.com/toyship/PKHUD.git`)
+  - PromiseKit
+  - PromiseKit/Alamofire
+  - ReachabilitySwift
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  PKHUD:
+    :git: https://github.com/toyship/PKHUD.git
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: 85c659ac534c5f8a72eb3b72488fb941e82763bd
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  PKHUD:
+    :commit: 28fb970b41d63134e962f9da766b96670c0f55f0
+    :git: https://github.com/toyship/PKHUD.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CryptoSwift: b3e56d2cc816dced7aa832cc9d2824dbbb16b7b3
+  ExpandingMenu: 107548f3cb8c04b28a8b6b436983f506849484cc
   Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
+  Parse: b0aa91d2c435e53d4a9af26e741e014c9b35c42e
+  PKHUD: 001c11518f125a273ddf026bcc64918423744ea2
+  PromiseKit: 08dfb783c161ddcd95b7912421f14c5113fd8318
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 03cc341a9665361527400cc27067defa66fcba64
+PODFILE CHECKSUM: 373ca39e566cd751af83c33d68ac6681cbfb00cc
 
 COCOAPODS: 1.2.1
