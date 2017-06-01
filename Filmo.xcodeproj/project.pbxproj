@@ -16,6 +16,12 @@
 		170315661EDF7D0500997C83 /* ReachabilitySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703155F1EDF7D0500997C83 /* ReachabilitySwift.framework */; };
 		1703156D1EDF850400997C83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703156C1EDF850400997C83 /* HomeViewController.swift */; };
 		1703156F1EDF8A9600997C83 /* API_HELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703156E1EDF8A9600997C83 /* API_HELPERS.swift */; };
+		170315711EDF8DCA00997C83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170315701EDF8DCA00997C83 /* SplashViewController.swift */; };
+		170315731EDF8FCB00997C83 /* TutorialGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170315721EDF8FCB00997C83 /* TutorialGalleryViewController.swift */; };
+		170315751EDF908A00997C83 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170315741EDF908A00997C83 /* LoginViewController.swift */; };
+		170315771EDF90B400997C83 /* UserRegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170315761EDF90B400997C83 /* UserRegisterTableViewController.swift */; };
+		1703157B1EDF936800997C83 /* Enumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703157A1EDF936800997C83 /* Enumerator.swift */; };
+		1703157D1EDF93D800997C83 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703157C1EDF93D800997C83 /* SignIn.swift */; };
 		174A64841ED8645C00A677DC /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A64831ED8645C00A677DC /* RateApp.swift */; };
 		174A648F1ED8654C00A677DC /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A64881ED8654C00A677DC /* CarbonSwipeRefresh.m */; };
 		174A64901ED8654C00A677DC /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A648A1ED8654C00A677DC /* CarbonTabSwipeNavigation.m */; };
@@ -54,6 +60,12 @@
 		1703155F1EDF7D0500997C83 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReachabilitySwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Filmo-abkcqoihqsomvkbevrohqnhfcbkw/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework"; sourceTree = "<group>"; };
 		1703156C1EDF850400997C83 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1703156E1EDF8A9600997C83 /* API_HELPERS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_HELPERS.swift; sourceTree = "<group>"; };
+		170315701EDF8DCA00997C83 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		170315721EDF8FCB00997C83 /* TutorialGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialGalleryViewController.swift; sourceTree = "<group>"; };
+		170315741EDF908A00997C83 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		170315761EDF90B400997C83 /* UserRegisterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterTableViewController.swift; sourceTree = "<group>"; };
+		1703157A1EDF936800997C83 /* Enumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerator.swift; sourceTree = "<group>"; };
+		1703157C1EDF93D800997C83 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		174A64831ED8645C00A677DC /* RateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		174A64851ED8654B00A677DC /* Filmo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filmo-Bridging-Header.h"; sourceTree = "<group>"; };
 		174A64861ED8654C00A677DC /* CarbonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonKit.h; sourceTree = "<group>"; };
@@ -127,7 +139,7 @@
 		170315681EDF83EB00997C83 /* SOCIAL */ = {
 			isa = PBXGroup;
 			children = (
-				1703156C1EDF850400997C83 /* HomeViewController.swift */,
+				170315781EDF912F00997C83 /* FEED */,
 			);
 			name = SOCIAL;
 			sourceTree = "<group>";
@@ -135,8 +147,29 @@
 		170315691EDF847500997C83 /* LOGIN/REGISTER/GALLERY */ = {
 			isa = PBXGroup;
 			children = (
+				170315701EDF8DCA00997C83 /* SplashViewController.swift */,
+				170315721EDF8FCB00997C83 /* TutorialGalleryViewController.swift */,
+				170315741EDF908A00997C83 /* LoginViewController.swift */,
+				170315761EDF90B400997C83 /* UserRegisterTableViewController.swift */,
 			);
 			name = LOGIN/REGISTER/GALLERY;
+			sourceTree = "<group>";
+		};
+		170315781EDF912F00997C83 /* FEED */ = {
+			isa = PBXGroup;
+			children = (
+				1703156C1EDF850400997C83 /* HomeViewController.swift */,
+			);
+			name = FEED;
+			sourceTree = "<group>";
+		};
+		170315791EDF92A000997C83 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				1703157A1EDF936800997C83 /* Enumerator.swift */,
+				1703157C1EDF93D800997C83 /* SignIn.swift */,
+			);
+			name = MODELS;
 			sourceTree = "<group>";
 		};
 		174A64821ED863EA00A677DC /* OBJ-C */ = {
@@ -199,7 +232,8 @@
 				174A64821ED863EA00A677DC /* OBJ-C */,
 				17E063CC1ECFB3720092DC83 /* SERVICE */,
 				176632311ECF81C8008C0E0D /* AppDelegate.swift */,
-				17E063D71ECFC47E0092DC83 /* VIEW_CONTROLLERS */,
+				17E063D71ECFC47E0092DC83 /* UI */,
+				170315791EDF92A000997C83 /* MODELS */,
 				17E063D81ECFC4890092DC83 /* API */,
 				170315671EDF83D100997C83 /* VIEW_CONTROLLERS */,
 				176632481ECF8359008C0E0D /* MODEL */,
@@ -231,7 +265,7 @@
 			name = SERVICE;
 			sourceTree = "<group>";
 		};
-		17E063D71ECFC47E0092DC83 /* VIEW_CONTROLLERS */ = {
+		17E063D71ECFC47E0092DC83 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				17E063CF1ECFC43E0092DC83 /* FilmListViewController.swift */,
@@ -239,7 +273,7 @@
 				17E063D31ECFC4590092DC83 /* FilmDetailViewController.swift */,
 				17E063D51ECFC46F0092DC83 /* FilmCustomCell.swift */,
 			);
-			name = VIEW_CONTROLLERS;
+			name = UI;
 			sourceTree = "<group>";
 		};
 		17E063D81ECFC4890092DC83 /* API */ = {
@@ -404,8 +438,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1703157B1EDF936800997C83 /* Enumerator.swift in Sources */,
+				1703157D1EDF93D800997C83 /* SignIn.swift in Sources */,
 				17E063C91ECFB10D0092DC83 /* MovieModel.swift in Sources */,
+				170315731EDF8FCB00997C83 /* TutorialGalleryViewController.swift in Sources */,
 				176632441ECF8280008C0E0D /* CoreDataStack.swift in Sources */,
+				170315751EDF908A00997C83 /* LoginViewController.swift in Sources */,
 				1703156D1EDF850400997C83 /* HomeViewController.swift in Sources */,
 				17E063D61ECFC46F0092DC83 /* FilmCustomCell.swift in Sources */,
 				174A64911ED8654C00A677DC /* CarbonTabSwipeScrollView.m in Sources */,
@@ -413,9 +451,11 @@
 				174A64951ED8656000A677DC /* SWRevealViewController.m in Sources */,
 				1766324E1ECF897A008C0E0D /* API_UTILS.swift in Sources */,
 				174A64901ED8654C00A677DC /* CarbonTabSwipeNavigation.m in Sources */,
+				170315771EDF90B400997C83 /* UserRegisterTableViewController.swift in Sources */,
 				174A64921ED8654C00A677DC /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				17E063CB1ECFB2320092DC83 /* MovieManage+Mapping.swift in Sources */,
 				17E063D01ECFC43E0092DC83 /* FilmListViewController.swift in Sources */,
+				170315711EDF8DCA00997C83 /* SplashViewController.swift in Sources */,
 				1703156F1EDF8A9600997C83 /* API_HELPERS.swift in Sources */,
 				17E063CE1ECFB3EA0092DC83 /* LocalCoreDataService.swift in Sources */,
 				17E063D41ECFC4590092DC83 /* FilmDetailViewController.swift in Sources */,
